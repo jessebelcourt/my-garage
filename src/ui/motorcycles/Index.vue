@@ -15,8 +15,8 @@ export default {
     breadcrumbs() {
       const breadcrumbs = [
         {
-          to: { name: "motorcycles:list" },
-          text: "All Motorcycles",
+          to: { name: "index" },
+          text: "Main",
           exact: true,
         },
       ];

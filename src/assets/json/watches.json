@@ -1,0 +1,32 @@
+{
+  "watches": [
+    {
+      "manufacturer": "MVMT",
+      "model": "VOYAGER BRONZE AGE",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "color": "Brown",
+      "image": "https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwd924d4e7/images/products/MV01-BROGR_fr.jpg?sw=1660&sh=1660"
+    },
+    {
+      "manufacturer": "Nixon",
+      "model": "Sentry Leather Watch",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "color": "Black",
+      "image": "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwf408e7ba/products/A105-1041-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png"
+    },
+    {
+      "manufacturer": "Fossil",
+      "model": "Fenmore",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "color": "Black",
+      "image": "https://fossil.scene7.com/is/image/FossilPartners/BQ2365_main?$sfcc_fos_hi-res$"
+    },
+    {
+      "manufacturer": "Rolex",
+      "model": "Sky-Dweller",
+      "color": "Gold",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "https://content.rolex.com/dam/new-watches-2020/new-sky-dweller/new-sky-dweller-m326238-0009-search.jpg"
+    }
+  ]
+}

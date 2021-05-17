@@ -2,31 +2,37 @@
   <v-row>
     <v-col>
       <v-card>
-        <v-img :src="require(`@/assets/images/${motorcycle.image}`)" />
+        <v-img
+          :src="
+            showMotorcycle
+              ? require(`@/assets/images/${item.image}`)
+              : item.image
+          "
+        />
         <v-card-title>
-          {{ motorcycle.manufacturer }}
+          {{ item.manufacturer }}
         </v-card-title>
         <v-card-subtitle>
-          {{ motorcycle.model }}
+          {{ item.model }}
         </v-card-subtitle>
         <v-divider />
         <v-card-text>
           <h3>Description</h3>
-          <p>{{ motorcycle.description }}</p>
+          <p>{{ item.description }}</p>
           <v-list>
-            <v-list-item>
+            <v-list-item v-if="item.power">
               <v-list-item-content>
                 <v-list-item-title>Power</v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ motorcycle.power }}
+                  {{ item.power }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item>
+            <v-list-item v-if="item.displacement">
               <v-list-item-content>
                 <v-list-item-title>Displacement</v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ motorcycle.displacement }}
+                  {{ item.displacement }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -34,15 +40,15 @@
               <v-list-item-content>
                 <v-list-item-title>Color</v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ motorcycle.color }}
+                  {{ item.color }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item>
+            <v-list-item v-if="item.year">
               <v-list-item-content>
                 <v-list-item-title>Year</v-list-item-title>
                 <v-list-item-subtitle>
-                  {{ motorcycle.year }}
+                  {{ item.year }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -61,12 +67,19 @@ export default {
       type: String,
       required: true,
     },
+    showMotorcycle: {
+      type: Boolean,
+      default: true,
+    },
   },
   computed: {
     ...mapGetters("motorcycles", ["getMotorcycles"]),
+    ...mapGetters("watches", ["getWatches"]),
     // This would be either loaded async or a lookup from all inclusive list
-    motorcycle() {
-      return this.getMotorcycles[this.id];
+    item() {
+      return this.showMotorcycle
+        ? this.getMotorcycles[this.id]
+        : this.getWatches[this.id];
     },
   },
 };

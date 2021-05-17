@@ -21,6 +21,6 @@ export default {
       // } catch (error) {
       //   console.error('There was a problem fetching motorcycle data: ', error);
       // }
-    }
+    },
   }
 };

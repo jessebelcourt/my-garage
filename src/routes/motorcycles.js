@@ -7,6 +7,7 @@ export default {
     {
       path: "",
       name: "motorcycles:list",
+      props: true,
       component: () =>
         import(/* webpackChunkName: "motorcycles-list" */ "@/ui/motorcycles/List"),
     },
